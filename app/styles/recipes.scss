@@ -1,0 +1,178 @@
+// bower:scss
+
+table {
+    width: 100%;
+}
+
+thead, tbody {
+    display: block;
+}
+
+#filtersSection {
+    display: table-row;
+    width: 100%;
+}
+
+#filtersWrapper {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+}
+
+#filtersWrapper-inner {
+    width: 100%;
+    min-height: 57px;
+    border-radius: 4px;
+    border: solid thin #000098;
+    background-color: #FFFFFF;
+}
+
+#filters {
+    display: inline-block;
+}
+
+#filterText {
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: transparent;
+    //min-width: 60px;
+    font-size: 15px;
+}
+
+#filterControls {
+    margin-left: 4px;
+    width: 53px;
+}
+
+#clearFilters {
+    //vertical-align: middle;
+    background-color: #D3D8FF;
+    color: #000098;
+    border-radius: 5px;
+    border: solid thin #000098;
+    width: 100%;
+    height: 28px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+#autoCompSwitch {
+    background-color: #D3D8FF;
+    color: #000098;
+    border-radius: 5px;
+    border: solid thin #000098;
+    width: 51px;
+    height: 26px;
+    //vertical-align: middle;
+}
+
+#autoCompSwitch .switchText {
+    font-size: 12px;
+    font-weight: bold;
+    display: table-cell;
+    padding: 5px 3px;
+}
+
+#autoCompSwitch img {
+    float: left;
+}
+
+#autoCompSwitch.on img {
+    float: right;
+}
+
+#filters button {
+    color: #FFFFFF;
+    border-radius: 4px;
+    margin: 1px 1px;
+    font-size: 15px;
+}
+
+.filter-include {
+    background-color: #7777FF;
+}
+
+.filter-exclude {
+    background-color: #FF7777;
+}
+
+#recipes {
+    border-radius: 6px;
+    background-color: #000098;
+    margin-top: 4px;
+    border-spacing: 0 4px;
+    padding: 1px 6px;
+}
+
+#recipes tbody {
+    height: 425px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2B2B2B;
+}
+
+#recipes thead {
+}
+
+#recipes th {
+    border-radius: 2px;
+    color: #FFFFFF;
+}
+
+#recipes tr {
+    //width: 100%;
+}
+
+#recipes td {
+    padding: 3px 8px;
+    border-radius: 0;
+    width: 130px;
+}
+
+$recipe-border-radius: 3px;
+
+#recipes tbody td:first-child {
+    border-top-left-radius: $recipe-border-radius;
+    border-bottom-left-radius: $recipe-border-radius;
+}
+
+#recipes tbody td:last-child {
+    border-top-right-radius: $recipe-border-radius;
+    border-bottom-right-radius: $recipe-border-radius;
+}
+
+
+.personaBasicDetails {
+    font-size: 11px;
+}
+
+.navButton {
+    background-color: #000098;
+    margin-top: 3px;
+    border-radius: 4px;
+    padding: 3px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #D3D8FF;
+}
+
+.navButton:disabled {
+    background-color: #666698;
+}
+
+#pageNav {
+    position: relative;
+    font-weight: bold;
+}
+
+#pageInfo {
+    position: absolute;
+    right: 0px;
+    padding: 5px;
+}
+
+// endbower

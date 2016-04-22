@@ -28,3 +28,12 @@ If you want to get in touch, even though you *probably don't exist* (don't be di
 
 Cheers,
 M
+
+
+P.S. I've included a ready-made version in the "dist" folder, in case you can't be bothered to build it. You'll still need to run it through some kind of web server for it to work properly, I think (as just opening it in a browser will cause it to complain that the page isn't allowed to load files off the disk).
+
+P.P.S. If you DO want to build it, you'll need to install NPM. Then, in the project directory, just do:
+- "npm install" (to install the Node dependencies)
+- "bower install" (to install the Bower dependencies)
+- "gulp build" (to build it; the output goes in the "dist" folder)
+And, er, I think that should work. Hopefully.
