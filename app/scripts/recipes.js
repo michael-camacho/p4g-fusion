@@ -9,7 +9,6 @@ const ROWS_PER_PAGE = 10;
 let currentRecipes = [];
 let autoCompleteNames = false;
 
-const personaList = document.getElementById( "personaList" );
 const infoWrapper = document.getElementById( "personaInfo" );
 guiUtils.populatePersonaList( infoWrapper, trySplitting, true );
 document.getElementById( "filterText" ).addEventListener( "input", processFilterEdit );
@@ -20,6 +19,9 @@ $( document.getElementById( "autoCompSwitch" ) ).click( function() {
     $( this ).toggleClass( "on" );
     autoCompleteNames = $( this ).hasClass( "on" ); // If I chain this after toggleClass, the value is always wrong??
     $( this ).find( ".switchText" ).text( autoCompleteNames ? "on" : "off" );
+    if ( autoCompleteNames ) {
+        processFilterEdit();
+    }
 } );
 $( () => {
     document.getElementById( "autoCompSwitch" ).dispatchEvent( new Event( "click" ) ); // init the switch to "off" ;)
@@ -63,6 +65,8 @@ function filterRecipes( recipes ) {
 }
 
 function displayRecipes() {
+    enableFilters( currentRecipes.length > 0 );
+
     const table = document.getElementById( "recipes" );
     const pageNavSel = $( document.getElementById( "pageNav" ) );
     table.innerHTML = "";
@@ -127,6 +131,8 @@ function getCellText( persona ) {
 }
 
 function displaySpecialRecipe( recipe ) {
+    enableFilters( false );
+
     const table = document.getElementById( "recipes" );
     table.innerHTML = "";
 
@@ -152,6 +158,13 @@ class Match {
         this.name = name;
         this.type = type;
     }
+}
+
+function enableFilters( enable ) {
+    // $( document.querySelectorAll( "#filtersSection *" ) ).toggleClass( "hidden", !enable );
+    const filterElems = $( document.querySelectorAll( "#filtersSection *" ) );
+    filterElems.prop( "disabled", !enable );
+    filterElems.toggleClass( "disabled", !enable );
 }
 
 const arcanas = p4gData.getAllArcanas();

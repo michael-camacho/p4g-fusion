@@ -8,6 +8,11 @@ thead, tbody {
     display: block;
 }
 
+.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
 #filtersSection {
     display: table-row;
     width: 100%;
@@ -161,7 +166,8 @@ $recipe-border-radius: 3px;
 }
 
 .navButton:disabled {
-    background-color: #666698;
+    //background-color: #666698;
+    opacity: 0.3;
 }
 
 #pageNav {
