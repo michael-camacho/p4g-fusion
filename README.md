@@ -7,7 +7,7 @@
 I was playing Persona 4 Golden and decided that it would be reeeally helpful if I had an easy way to:
 
 1. Calculate the fusion results of personae I hadn't registered in the compendium yet
-2. Calculate fusion "recipes" that would produce a specific persona.
+2. Calculate fusion "recipes" that would produce a specific persona
 
 I thought it would definitely, absolutely be useful. So much so that I decided to stop playing P4G and determined I'd not return to it until I'd written some kind of vaguely-defined program, using some kind of nebulous technology, on an unspecified platform... and it was with this iron resolve that I wrote a crappy (but necessary) Java program to harvest persona information from one of the FAQs on GameFAQs (that program's not included here, alas ;)), and made a note to write the actual fusion app itself a bit later. And then got distracted by other stuff and forgot about it.
 
