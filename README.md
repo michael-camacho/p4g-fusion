@@ -5,6 +5,7 @@
 ## History Lesson
 
 I was playing Persona 4 Golden and decided that it would be reeeally helpful if I had an easy way to:
+
 1. Calculate the fusion results of personae I hadn't registered in the compendium yet
 2. Calculate fusion "recipes" that would produce a specific persona.
 
